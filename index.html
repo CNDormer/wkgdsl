@@ -3,155 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>自我介绍-玩恐鬼的砂狼</title>
+    <title>个人介绍 - 玩恐鬼的砂狼</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Local Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Bootstrap JS Bundle (includes Popper.js) -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    
     <link rel="icon" href="img/1.jpeg" type="image/x-icon">
+    <style>
+        body { color: black; }
+        #sidebar { min-height: 100vh; background-color: #f8f9fa; }
+        .sidebar-link { display: block; padding: 1rem; color: black; text-decoration: none; }
+        .sidebar-link:hover { background-color: #e2e6ea; }
+        .timeline { border-left: 3px solid #007bff; padding-left: 1rem; margin-top: 2rem; }
+        .timeline-event { margin-bottom: 1.5rem; }
+        .project-card img { height: 150px; object-fit: cover; }
+    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">我的个人页面</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">🏠首页Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">🚀技能Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">🙂关于我About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">📕日常Journal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">🎨作品Projects</a></li>
-                </ul>
-                <a href="#" target="_blank">
-                    <button class="btn btn-success">📚示例链接</button>
-                </a>
-            </div>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="p-3">
+            <h3>菜单</h3>
+            <a href="#home" class="sidebar-link">🏠 首页</a>
+            <a href="#skills" class="sidebar-link">🚀 技能</a>
+            <a href="#about" class="sidebar-link">🙂 关于我</a>
+            <a href="#journal" class="sidebar-link">📕 日常</a>
+            <a href="#projects" class="sidebar-link">🎨 作品</a>
         </div>
-    </nav>
-    <!-- Navbar End -->
 
-    <!-- Home / Hero -->
-    <div class="jumbotron text-center py-5" id="home" style="background-color:transparent;">
-        <img src="img/1.jpeg.png" class="rounded-circle mx-auto d-block img-thumbnail" width="200" height="200">
-        <h1 class="text-white mt-3">Hello，我叫玩恐鬼的砂狼</h1>
-        <p class="text-white">这是我做的一个介绍网站，用于展示我的技能和我的日常</p>
-        <a href="#about"><button class="btn btn-success">关于我</button></a>
-        <a href="#projects"><button class="btn btn-primary">查看作品</button></a>
-    </div>
+        <!-- Main Content -->
+        <div class="flex-grow-1 p-3">
+            <!-- Home -->
+            <div id="home" class="text-center mb-5">
+                <img src="img/1.jpeg.png" class="rounded-circle img-thumbnail mb-3" width="180">
+                <h1>Hello，我是玩恐鬼的砂狼</h1>
+                <p>这是我的个人展示网站，包括技能、日常和项目</p>
+            </div>
 
-    <!-- Skills Section -->
-    <div class="container mt-5 text-black" id="skills">
-        <h2 class="text-center">技能展示</h2>
-        <p class="text-center">下面是我会的技能及我觉得的熟练度</p>
-        <div class="mb-3">
-            <p>Surf（CSS and Roblox）</p>
-            <div class="progress">
-                <div class="progress-bar bg-info" style="width:80%"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <p>Roblox Lua</p>
-            <div class="progress">
-                <div class="progress-bar bg-warning" style="width:25%"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <p>HTML，CSS，JS</p>
-            <div class="progress">
-                <div class="progress-bar bg-success" style="width:35%"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <p>视频剪辑和制作（根本没打算搞现在）</p>
-            <div class="progress">
-                <div class="progress-bar bg-danger" style="width:10%"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <p>模拟飞行MSFS20</p>
-            <div class="progress">
-                <div class="progress-bar bg-danger" style="width:65%"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="container mt-5 text-black" id="about">
-        <h2 class="text-center">关于我</h2>
-        <p class="text-center">我是一个喜欢飞行，游戏，一点编程和一些体育运动的人。我想学习编程来做个游戏，网站，和一些MOD</p>
-        <div class="row mt-4">
-            <div class="col-md-5 text-center">
-                <img src="img/avatar.png" width="200" class="rounded-circle img-thumbnail">
-            </div>
-            <div class="col-md-7">
-                <h3>Hello，我叫玩恐鬼的砂狼</h3>
-                <p>我是一个喜欢游戏，二次元，模拟飞行和学习新技能的人。这个介绍网站用来展示我的技能、日常和作品（没有）。</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- journal Section -->
-    <div class="container mt-5 text-black" id="blog">
-        <h2 class="text-center">推荐文章</h2>
-        <p class="text-center">这里是示例博客文章</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-            <div class="col">
-                <div class="card">
-                    <img src="img/sample1.png" class="card-img-top" alt="文章示例图1">
-                    <div class="card-body">
-                        <h5 class="card-title">Surf 排名</h5>
-                        <p class="card-text">这是一个示例文章描述。替换为你的文章标题和摘要。</p>
+            <!-- Skills -->
+            <div id="skills" class="mb-5">
+                <h2>技能展示</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3">
+                            <h5>Surf (CSS & Roblox)</h5>
+                            <p>熟练度：80%</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3">
+                            <h5>Roblox Lua</h5>
+                            <p>熟练度：25%</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3">
+                            <h5>HTML / CSS / JS</h5>
+                            <p>熟练度：35%</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/sample2.png" class="card-img-top" alt="文章示例图2">
-                    <div class="card-body">
-                        <h5 class="card-title">游戏日常</h5>
-                        <p class="card-text">记录我每天游戏的日常</p>
+
+            <!-- About -->
+            <div id="about" class="mb-5">
+                <h2>关于我</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="img/avatar.png" class="rounded-circle img-thumbnail mb-3" width="180">
+                    </div>
+                    <div class="col-md-8">
+                        <p>我喜欢游戏、飞行、二次元和编程。这个网站展示我的技能、日常和未来作品。</p>
+                        <p>希望未来能开发游戏、MOD、网站等项目。</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/sample3.png" class="card-img-top" alt="文章示例图3">
-                    <div class="card-body">
-                        <h5 class="card-title">象棋Chess</h5>
-                        <p class="card-text">我的象棋记录实况</p>
+
+            <!-- Journal -->
+            <div id="journal" class="mb-5">
+                <h2>日常日志</h2>
+                <div class="timeline">
+                    <div class="timeline-event">
+                        <h5>Surf 排名</h5>
+                        <p>记录最近的Surf游戏成绩。</p>
+                    </div>
+                    <div class="timeline-event">
+                        <h5>游戏日常</h5>
+                        <p>今天玩了Roblox，尝试新地图。</p>
+                    </div>
+                    <div class="timeline-event">
+                        <h5>象棋Chess</h5>
+                        <p>记录象棋比赛和练习成果。</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Projects -->
+            <div id="projects" class="mb-5">
+                <h2>我的作品</h2>
+                <p>目前没有作品，未来可能会发布。</p>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card project-card">
+                            <img src="img/sample-project1.png" class="card-img-top" alt="暂无">
+                            <div class="card-body text-center">
+                                <p class="card-text">示例项目1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card project-card">
+                            <img src="img/sample-project2.png" class="card-img-top" alt="暂无">
+                            <div class="card-body text-center">
+                                <p class="card-text">示例项目2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card project-card">
+                            <img src="img/sample-project3.png" class="card-img-top" alt="暂无">
+                            <div class="card-body text-center">
+                                <p class="card-text">示例项目3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card project-card">
+                            <img src="img/sample-project4.png" class="card-img-top" alt="暂无">
+                            <div class="card-body text-center">
+                                <p class="card-text">示例项目4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-light text-center py-4 mt-5">
+                <p>© 2025 我的个人页面 | 本页面代码采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a> 开源，Bootstrap 使用 MIT 许可证。</p>
+            </footer>
         </div>
     </div>
-
-    <!-- Projects Section -->
-    <div class="container mt-5 text-center text-black" id="projects">
-        <h2>我的作品</h2>
-        <p>我没有作品但是以后可能会有</p>
-        <div class="row mt-3">
-            <div class="col-md-3"><img src="img/sample-project1.png" class="img-fluid" alt="没有"></div>
-            <div class="col-md-3"><img src="img/sample-project2.png" class="img-fluid" alt="没有"></div>
-            <div class="col-md-3"><img src="img/sample-project3.png" class="img-fluid" alt="没有"></div>
-            <div class="col-md-3"><img src="img/sample-project4.png" class="img-fluid" alt="没有"></div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p>© 2025 我的个人页面 | 本页面代码采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="text-white">GNU GPL v3</a> 开源，Bootstrap 使用 MIT 许可证。</p>
-    </footer>
 </body>
 
 </html>
