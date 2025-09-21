@@ -1,37 +1,100 @@
-
+/* Background & Body */
 body {
     background-image: url('../img/117849615.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-attachment: fixed;
-    font-family: "Clear Han Serif";
+    font-family: "Clear Han Serif", sans-serif;
     font-weight: normal;
-    backdrop-filter: blur(5px);
+    color: black;
 }
 
+/* Centering helper */
 .center-h {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+/* Remove underline */
 .text-underline-delete {
     text-decoration: none;
 }
 
+/* Footer link colors */
 .footer-links-style {
     text-decoration: none;
-    color: rgb(113, 226, 52)
+    color: rgb(113, 226, 52);
 }
 
+.footer-links-style:hover {
+    text-decoration: underline;
+}
+
+/* Footer text */
 .footer-text-style {
     text-decoration: none;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 
+/* Flex right helper */
 .div-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+/* Jumbotron / Hero */
+.jumbotron {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 3rem 1rem;
+    backdrop-filter: blur(5px);
+}
+
+/* Section titles */
+.section-title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Project card images */
+.project-card img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: #71e234;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Progress bars spacing */
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
 }
