@@ -1,28 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hans">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Bootstrap Website</title>
+    <meta charset="UTF-8">
+    <title>首页 - 示例个人页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Local Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Local Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">MySite</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">示例个人页面</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">🏠首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">🚀技能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">🙂关于我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">📕博客</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">🎨作品</a></li>
+                </ul>
+                <a href="#" target="_blank">
+                    <button class="btn btn-success">📚示例链接</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home / Hero -->
+    <div class="jumbotron text-center py-5" id="home" style="background-color:transparent;">
+        <img src="img/avatar.png" class="rounded-circle mx-auto d-block img-thumbnail" width="200" height="200">
+        <h1 class="text-white mt-3">你好，我叫示例</h1>
+        <p class="text-white">这是一个示例个人网站，用于展示技能和作品</p>
+        <a href="#about"><button class="btn btn-success">关于我</button></a>
+        <a href="#projects"><button class="btn btn-primary">查看作品</button></a>
     </div>
-  </nav>
 
-  <div class="container mt-5">
-    <h1>Hello, Bootstrap!</h1>
-    <p>This site is running Bootstrap locally (no CDN).</p>
-  </div>
+    <!-- Skills Section -->
+    <div class="container mt-5 text-white" id="skills">
+        <h2 class="text-center">技能展示</h2>
+        <p class="text-center">下面是一些示例技能及熟练度</p>
+        <div class="mb-3">
+            <p>C++</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:70%"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p>Python</p>
+            <div class="progress">
+                <div class="progress-bar bg-warning" style="width:85%"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p>前端开发 (HTML/CSS/JS)</p>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width:60%"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p>视频制作</p>
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width:50%"></div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Local Bootstrap JS -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- About Section -->
+    <div class="container mt-5 text-white" id="about">
+        <h2 class="text-center">关于我</h2>
+        <p class="text-center">这里是示例自我介绍，替换为自己的信息</p>
+        <div class="row mt-4">
+            <div class="col-md-5 text-center">
+                <img src="img/avatar.png" width="200" class="rounded-circle img-thumbnail">
+            </div>
+            <div class="col-md-7">
+                <h3>你好，我叫示例</h3>
+                <p>我是一个喜欢编程、设计和学习新技能的人。这个个人网站用来展示我的技能、文章和作品。你可以用这个模板替换文本、图片和链接来创建自己的主页。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container mt-5 text-white" id="blog">
+        <h2 class="text-center">推荐文章</h2>
+        <p class="text-center">这里是示例博客文章</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card">
+                    <img src="img/sample1.png" class="card-img-top" alt="文章示例图1">
+                    <div class="card-body">
+                        <h5 class="card-title">示例文章 1</h5>
+                        <p class="card-text">这是一个示例文章描述。替换为你的文章标题和摘要。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/sample2.png" class="card-img-top" alt="文章示例图2">
+                    <div class="card-body">
+                        <h5 class="card-title">示例文章 2</h5>
+                        <p class="card-text">这是另一个示例文章描述，用于展示博客内容布局。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/sample3.png" class="card-img-top" alt="文章示例图3">
+                    <div class="card-body">
+                        <h5 class="card-title">示例文章 3</h5>
+                        <p class="card-text">这是第三个示例文章，展示如何排版卡片内容。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container mt-5 text-center text-white" id="projects">
+        <h2>我的作品</h2>
+        <p>这是示例作品展示区域</p>
+        <div class="row mt-3">
+            <div class="col-md-3"><img src="img/sample-project1.png" class="img-fluid" alt="作品示例1"></div>
+            <div class="col-md-3"><img src="img/sample-project2.png" class="img-fluid" alt="作品示例2"></div>
+            <div class="col-md-3"><img src="img/sample-project3.png" class="img-fluid" alt="作品示例3"></div>
+            <div class="col-md-3"><img src="img/sample-project4.png" class="img-fluid" alt="作品示例4"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>© 2025 示例个人页面 | 本页面代码采用 <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="text-white">GNU GPL v3</a> 开源，Bootstrap 使用 MIT 许可证。</p>
+    </footer>
 </body>
+
 </html>
 
