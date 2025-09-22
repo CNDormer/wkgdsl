@@ -1,4 +1,6 @@
-/* Background & Body */
+/* =======================
+   Background & Body
+======================= */
 body {
     background-image: url('../img/117849615.jpg');
     background-size: cover;
@@ -9,47 +11,46 @@ body {
     color: black;
 }
 
-/* Centering helper */
+/* =======================
+   Helpers
+======================= */
 .center-h {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Navbar links */
-.navbar-nav .nav-link {
-    font-weight: 500;
-}
-
-/* Remove underline */
 .text-underline-delete {
     text-decoration: none;
 }
 
-/* Footer link colors */
-.footer-links-style {
-    text-decoration: none;
-    color: rgb(113, 226, 52);
-}
-
-.footer-links-style:hover {
-    text-decoration: underline;
-}
-
-/* Footer text */
-.footer-text-style {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-/* Flex right helper */
 .div-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-/* Jumbotron / Hero */
+/* =======================
+   Navbar
+======================= */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* semi-transparent */
+    backdrop-filter: blur(6px);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #71e234 !important; /* green hover */
+}
+
+/* =======================
+   Jumbotron / Hero
+======================= */
 .jumbotron {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -57,14 +58,18 @@ body {
     backdrop-filter: blur(5px);
 }
 
-/* Section titles */
+/* =======================
+   Section Titles
+======================= */
 .section-title {
     font-weight: bold;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-/* Cards */
+/* =======================
+   Cards
+======================= */
 .card {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -77,24 +82,45 @@ body {
     border-radius: 10px;
 }
 
-/* Footer */
+/* =======================
+   Progress Bars
+======================= */
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+/* =======================
+   Footer
+======================= */
 footer {
-    background-color: #343a40;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
     color: white;
     padding: 2rem 1rem;
+    backdrop-filter: blur(6px);
 }
 
 footer a {
     color: #71e234;
     text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 footer a:hover {
+    color: #9cff70;
     text-decoration: underline;
 }
 
-/* Progress bars spacing */
-.progress {
-    height: 20px;
-    margin-bottom: 10px;
+.footer-links-style {
+    text-decoration: none;
+    color: rgb(113, 226, 52);
+}
+
+.footer-links-style:hover {
+    text-decoration: underline;
+}
+
+.footer-text-style {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
