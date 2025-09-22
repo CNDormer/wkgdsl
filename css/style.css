@@ -9,6 +9,7 @@ body {
     font-family: "Clear Han Serif", sans-serif;
     font-weight: normal;
     color: black;
+    margin: 0;
 }
 
 /* =======================
@@ -34,7 +35,7 @@ body {
    Navbar
 ======================= */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5) !important; /* semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5) !important;
     backdrop-filter: blur(6px);
 }
 
@@ -56,6 +57,7 @@ body {
     border-radius: 15px;
     padding: 3rem 1rem;
     backdrop-filter: blur(5px);
+    text-align: center;
 }
 
 /* =======================
@@ -75,7 +77,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Project card images */
 .project-card img {
     height: 150px;
     object-fit: cover;
@@ -94,12 +95,13 @@ body {
    Footer
 ======================= */
 footer {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 2rem 1rem;
     backdrop-filter: blur(6px);
 }
 
+/* Footer links */
 footer a {
     color: #71e234;
     text-decoration: none;
@@ -123,4 +125,49 @@ footer a:hover {
 .footer-text-style {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+/* =======================
+   Footer Adjustments
+======================= */
+
+/* Column 1: About font larger */
+footer .col-md-4:first-child h5 {
+    font-size: 1.5rem;
+}
+
+footer .col-md-4:first-child p {
+    font-size: 1.1rem;
+}
+
+/* Column 2: Quick links spacing */
+footer .col-md-4:nth-child(2) ul li {
+    line-height: 2.2;
+}
+
+/* Column 3: Social media stacked in two vertical lists */
+footer .col-md-4:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col-md-4:last-child ul {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+footer .col-md-4:last-child ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer copy text at the very bottom */
+footer .footer-copy {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+/* Optional: icons spacing */
+footer .bi {
+    margin-right: 5px;
 }
